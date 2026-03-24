@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Real Ethiopia</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #111;
+        color: #fff;
+    }
+
+    /* HEADER */
+    header {
+        text-align: center;
+        padding: 30px;
+        background: linear-gradient(90deg, green, yellow, red);
+    }
+
+    header h1 {
+        font-size: 50px;
+        font-weight: 900;
+        margin: 0;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+    }
+
+    header h1 span.green { color: green; }
+    header h1 span.yellow { color: yellow; }
+    header h1 span.red { color: red; }
+
+    /* WELCOME */
+    .welcome {
+        text-align: center;
+        padding: 30px;
+        background: #222;
+    }
+
+    .welcome h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .welcome p {
+        max-width: 700px;
+        margin: auto;
+        line-height: 1.6;
+    }
+
+    /* VIDEO SECTION */
+    .videos {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .videos h2 {
+        margin-bottom: 20px;
+    }
+
+    .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 200px;
+        border: none;
+        border-radius: 10px;
+    }
+
+    /* PHOTO CARDS */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .card {
+        background: #222;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content h3 {
+        margin: 0 0 10px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #000;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>
+        The <span class="green">Real</span> 
+        <span class="yellow">Ethiopia</span>
+    </h1>
+</header>
+
+<section class="welcome">
+    <h2>Welcome to The Real Ethiopia</h2>
+    <p>
+        Discover the beauty, culture, and natural wonders of Ethiopia. 
+        From breathtaking landscapes to vibrant cities, this platform 
+        showcases the true essence of the country. Explore, learn, and experience 
+        Ethiopia like never before.
+    </p>
+</section>
+
+<!-- YOUTUBE VIDEOS SECTION -->
+<section class="videos">
+    <h2>YouTube Videos</h2>
+    <div class="video-container">
+        <!-- REPLACE "VIDEO_ID" WITH YOUR ACTUAL YOUTUBE VIDEO ID -->
+        <iframe src="https://youtu.be/IwCHeicwGSQ" title="Arbaminch" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/CSXFeOsOQbw" title="Hawassa" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/eQGxOzOpp2c" title="Awash" allowfullscreen></iframe>
+        <iframe src="https://youtu.be/HDzq28vrRbQ" title="Wenchi" allowfullscreen></iframe>
+    </div>
+</section>
+
+<!-- PHOTO CARDS -->
+<section class="cards">
+    <div class="card">
+        <img src="https://source.unsplash.com/400x300/?awash,ethiopia" alt="Awash">
+        <div class="card-content">
+            <h3>Awash</h3>
+            <p>
+                Known for Awash National Park, this area features stunning waterfalls, wildlife, 
+                and volcanic landscapes. A perfect destination for nature lovers.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://source.unsplash.com/400x300/?wenchi,crater,lake" alt="Wenchi">
+        <div class="card-content">
+            <h3>Wenchi</h3>
+            <p>
+                Wenchi Crater Lake offers peaceful scenery, hiking trails, and horseback riding 
+                around one of Ethiopia’s most beautiful volcanic lakes.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://source.unsplash.com/400x300/?arbaminch,lake" alt="Arbaminch">
+        <div class="card-content">
+            <h3>Arbaminch</h3>
+            <p>
+                Famous for the “Forty Springs” and Nechisar National Park, Arbaminch is rich in 
+                wildlife and offers views of Lakes Abaya and Chamo.
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://source.unsplash.com/400x300/?hawassa,lake" alt="Hawassa">
+        <div class="card-content">
+            <h3>Hawassa</h3>
+            <p>
+                A vibrant lakeside city known for its relaxing atmosphere, fresh fish markets, 
+                and beautiful views of Lake Hawassa.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 The Real Ethiopia | Explore the Beauty
+</footer>
+
+</body>
+</html>
